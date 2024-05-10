@@ -10,6 +10,8 @@ const port = 3000;
 
 /* express 미들웨어 설정 */
 
+
+
 // cors 설정
 app.use(cors());
 
