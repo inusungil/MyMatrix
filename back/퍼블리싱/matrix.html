@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>성공일정</title>
+    <!-- 메타 태그 설정, 저자, 키워드, 설명-->
+    <meta name="author" content="inusik"/>
+    <meta name="keywords" content="성공일정, 아이젠하워 매트릭스, 일정관리, 업무분배, 우선순위"/>
+    <meta name ="description" content="아이젠하워 매트릭스, 중요도와 긴급성을 기준으로 우선 순위를 세워 성공일정을  만듭니다 "/>
+    <!-- 파비콘 -->
+    <link rel = "icon" href ="img/favicon.ico"/>
+    <!-- 아이폰 파비콘 -->
+    <link rel = "apple-touch-icon" href ="img/favicon.ico"/>
+
+    <!-- font-awesome-icon -->
+    <link 
+     rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+     integrity=
+     "sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/jumbotron.css">
+    <link rel="stylesheet" href="css/matrix.css">
+    
+    
+
+    
+</head>
+<body>
+    <header> 
+        <div class="inner">  <!--대화면컨트롤-->
+            <div class="header-container">
+                <div class="title">
+                    <a href="#">성공일정</a>
+                </div>
+                <!-- title -->
+                <div class="sign-container">
+                    <div class="unsigned ">                    
+                        <div class="sign-in"><a href="#">로그인</a></div>
+                        <div class="sign-up"><a href="#">회원가입</a></div>
+                    </div>
+                    <!-- unsigned -->
+                    <div class="signed hidden"> 
+                        <div class="dropdown">
+                            <div class="dropdown-button">
+                                안녕하세요. <span id="nickname">홍길동</span>님
+                                <!-- <i class="fa-solid fa-arrow-down"></i> -->
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                            <!-- dropdown-button -->
+                            <div class="dropdown-content">
+                                <button id="sign-out">로그아웃</button>
+                            </div>
+                            <!-- dropdown-content -->
+                        </div>                   
+                        
+                    </div>
+                    <!-- signed -->
+                </div>
+            </div>
+            <!-- header-container -->
+        </div>
+        <!-- inner -->
+
+    
+    </header>
+
+    <main>
+        <div class="inner">  
+            <div class="jumbotron-container">
+                <div class="jumbotron-item-main">
+                    <div class="jumbotron-item-main-message">
+                        <p>내 시간을 제대로 쓰고 싶다면,</p>
+                        <h1>아이젠하워 매트릭스</h1>
+                    </div>
+                    <!-- jumbotron-item-main-message -->
+                    <div class="jumbotron-item-main-image">
+      
+                    </div>
+                    <!-- jumbotron-item-main-image -->
+                </div>
+                <!-- jumbotron-item-main -->
+                <div class="jumbotron-item-sub">
+                    <p>긴급성과 중요도를 기준으로 시간관리를 하고,</p>
+                    <p>일의 순위를 배분하는 방법입니다.</p>
+                </div>
+                <!-- jumbotron-item-sub -->
+            </div>
+            <!-- jumbotron-container -->
+
+            <div class="matrix-container">
+                <div class="matrix-item" id="decide">
+                    <div class="matrix-item-header">  
+                        <div class="matrix-title">📅 계획을 세워서 해야할 일</div>     <!--이모지-->
+                        <input type="text" class="matrix-input" placeholder="입력 후 엔터를 눌러주세요">
+                    </div> 
+                    <!-- matrix-item-header -->
+
+                    <ul class="matrix-item-list">
+                        <li class ="list-item">
+                            <div class="done-text-container">
+                                <input type="checkbox" class="todo-done">
+                                <p class="todo-text">산책가기1산책가기1산책가기1산책가기1산책가기1산책가기1</p>
+                            </div>
+                            <!-- done-text-container -->
+
+                            <div class="update-delete-container">             <!--fontawesome -->
+                                <i class="todo-update fas fa-pencil-alt"></i>
+                                <i class="todo-delete fas fa-trash-alt"></i>
+                            </div>
+                            <!-- update-delete-container -->
+
+                        </li>
+                        <!-- list-item -->
+
+                    </ul>
+                    <!-- matrix-item-list -->
+                </div>
+                <!-- matrix-item-decide -->
+
+                <div class="matrix-item" id="do">
+                    <div class="matrix-item-header">
+                        <div class="matrix-title">😍 지금 해야할 일</div>
+                        <input type="text" class="matrix-input" placeholder="입력 후 엔터를 눌러주세요">
+                    </div>
+                    <!-- matrix-item-header -->
+
+                    <ul class="matrix-item-list">
+                        <li class ="list-item">
+
+                            <div class="done-text-container">
+                                <input type="checkbox" class="todo-done">
+                                <p class ="todo-text">산책가기2</p>
+                            </div>
+                            <!-- done-text-container -->
+
+                            <div class="update-delete-container">  <!--fontawesome -->
+                                <i class="todo-update fas fa-pencil-alt"></i>
+                                <i class="todo-delete fas fa-trash-alt"></i>
+                            </div>
+                            <!-- update-delete-container -->
+
+                        </li>
+                        <!-- list-item -->
+
+                    </ul>
+                    <!-- matrix-item-list -->
+                </div>
+                <!-- matrix-item do -->
+
+                <div class="matrix-item" id="delegate">
+                    <div class="matrix-item-header">
+                        <div class="matrix-title">💙 급하지만 중요도가 낮은 일</div>
+                        <input type="text" class="matrix-input" placeholder="입력 후 엔터를 눌러주세요">
+                    </div>
+                    <!-- matrix-item-header -->
+
+                    <ul class="matrix-item-list">
+                        <li class ="list-item">
+                            <div class="done-text-container">
+                                <input type="checkbox" class="todo-done">
+                                <p class ="todo-text">산책가기3</p>
+                            </div>
+                            <!-- done-text-container -->
+
+                            <div class="update-delete-container">  <!--fontawesome -->
+                                <i class="todo-update fas fa-pencil-alt"></i>
+                                <i class="todo-delete fas fa-trash-alt"></i>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <!-- matrix-item-list -->
+                </div>
+                <!-- matrix-item delegate -->
+
+
+                <div class="matrix-item" id="delete">
+                    <div class="matrix-item-header">
+                        <div class="matrix-title">🖤 최후순위</div>
+                        <input type="text" class="matrix-input" placeholder="입력 후 엔터를 눌러주세요">
+                    </div>
+                    <!-- matrix-item-header-->
+
+                    <ul class="matrix-item-list">
+                        <li class ="list-item">
+                            <div class="done-text-container">
+                                <input type="checkbox" class="todo-done">
+                                <p class ="todo-text">산책가기4</p>
+                            </div>
+                            <!-- done-text-container -->
+
+                            <div class="update-delete-container">  <!--fontawesome -->
+                                <i class="todo-update fas fa-pencil-alt"></i>
+                                <i class="todo-delete fas fa-trash-alt"></i>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <!-- matrix-item-list -->
+                </div>
+                <!-- matrix-item delete -->
+
+               <span class="importance">중요도</span>
+                <span class="urgency">긴급성</span>
+           
+            </div>
+            <!-- matrix-container -->
+         
+
+
+        </div>
+        <!-- inner -->
+    </main>
+
+    <footer>
+        <div class="inner">
+            <div class="footer-container">
+                <div class="author">개발자: 김성일</div>
+                <div class="author-email">이메일: dummy@dummy.com</div>
+            </div>
+            <!-- foot-container -->
+        </div>
+    </footer>
+ 
+</body>
+</html>

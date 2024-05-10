@@ -1,0 +1,7 @@
+alter table Todos drop column todoscol;
+
+
+insert into Todos (userIdx, contents, type) values (1, '산책하기', 'do');
+
+
+select * from Todos where userIdx = 1 and type ='do' ;
