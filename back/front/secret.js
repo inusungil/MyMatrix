@@ -1,1 +1,0 @@
-exports.jwtSecret ="inusik-secret-8520";

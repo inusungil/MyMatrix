@@ -43,7 +43,7 @@ async function readTodo(){
             let element =`
             <li class ="list-item" id=${todo.todoIdx}>
                 <div class="done-text-container">
-                    <input type="checkbox" class="todo-done" ${todo.status==='C' ? "checked" : ""}/>   
+                    <input type="checkbox" class="todo-done" ${todo.status==="C" ? "checked" : ""}/>   
                     
                     <p class ="todo-text">
                         ${todo.contents}
@@ -174,10 +174,11 @@ async function createTodo(event, token){
 }
 
 async function updateTodoDone(event, token){
-    //console.log(event.target.checked);
+    console.log(event.target.checked);
     const status = event.target.checked ? "C" : "A" ;
     const todoIdx = event.target.closest(".list-item").id;
-
+    console.log(event.target.checked);
+    console.log(status);
     //console.log(todoIdx);
     const  config={
         method :"patch",
