@@ -1,3 +1,3 @@
-const url="https://www.inusik.shop";
+const url="https://43.201.223.5";
 
 
