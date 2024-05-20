@@ -105,7 +105,8 @@ function cudController(event){
 
     // ㄲ. create 이벤트 처리
 
-    if(targetTagName ==="INPUT" && key === "Enter"){
+    if(targetTagName ==="INPUT" && key === "Enter" ||
+    targetTagName ==="INPUT" && key === "="  ){
         createTodo(event, token);
         return;
     }
